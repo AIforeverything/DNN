@@ -1,0 +1,25 @@
+Fuel Efficiency Prediction:
+
+The objective of this project is to develop a machine learning model that can accurately predict the fuel efficiency (miles per gallon) of vehicles based on their attributes such as horsepower, weight, displacement, and more. The prediction of fuel efficiency is crucial for both consumers and manufacturers to make informed decisions about vehicle performance, environmental impact, and cost-effectiveness.
+The dataset provided contains various attributes of vehicles, including horsepower, weight, displacement, acceleration, and model year, along with their corresponding fuel efficiency measurements. By leveraging this dataset, we aim to train a regression model that can generalize well to unseen data and accurately predict the fuel efficiency of vehicles.
+This project will involve data preprocessing, exploratory data analysis, feature engineering, model selection, and evaluation. The success of the model will be measured based on its ability to accurately predict fuel efficiency values for unseen vehicles, using appropriate evaluation metrics such as mean squared error (MSE) or root mean squared error (RMSE).
+
+
+Install the ucimlrepo package
+pip install ucimlrepo
+
+Import the dataset into your code
+from ucimlrepo import fetch_ucirepo 
+  
+# fetch dataset 
+auto_mpg = fetch_ucirepo(id=9) 
+  
+# data (as pandas dataframes) 
+X = auto_mpg.data.features 
+y = auto_mpg.data.targets 
+  
+# metadata 
+print(auto_mpg.metadata) 
+  
+# variable information 
+print(auto_mpg.variables) 
